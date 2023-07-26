@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/user/index",
-    "pages/chat/index"
+    "pages/chat/index",
+    "pages/tts/index",
+    "pages/video/index"
   ],
   "subPackages": [],
   "window": {

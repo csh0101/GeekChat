@@ -180,7 +180,7 @@ export default {
 		const that = this;
 		// 设置菜单中的转发按钮触发转发事件时的转发内容
 		const shareObj = {
-			title: '抢先体验GPT-4', //自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径，支持PNG及JPG，不传入 imageUrl 则使用默认截图。显示图片长宽比是 5:4
+			title: '免费的文字转语音服务', //自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径，支持PNG及JPG，不传入 imageUrl 则使用默认截图。显示图片长宽比是 5:4
 			path: '/pages/chat/index',
 		};
 		// 返回shareObj
@@ -406,7 +406,7 @@ export default {
 				uni.setStorageSync('token', res.data.token);
 				that.isLogin = true;
 			}).catch(err => {
-
+                console.log(err)
 			})
 			uni.hideLoading()
 			that.loginShow = false

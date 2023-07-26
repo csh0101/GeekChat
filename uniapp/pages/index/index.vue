@@ -11,10 +11,10 @@
 				</u--image>
 			</view>
 			<u-transition :show="true" mode="slide-left">
-				<view class="title">GeekChat</view>
+				<view class="title">大音溪声</view>
 			</u-transition>
 			<u-transition :show="true" mode="slide-right">
-				<view class="desc">抢先体验GPT-4</view>
+				<view class="desc">免费的文转音服务</view>
 			</u-transition>
 
 		</view>
@@ -46,32 +46,47 @@
 export default {
 	data() {
 		return {
-			list: [{
-				"_id": '6404632309e2988160df195a',
-				"title": "AI对话",
-				"tags": "热门",
-				"desc": "解你困惑，知你烦恼。",
-				"img": "/static/index/chat.png",
-				"path": "/pages/chat/index",
+			list: [
+			// {
+			// 	"_id": '6404632309e2988160df195a',
+			// 	"title": "AI对话",
+			// 	"tags": "热门",
+			// 	"desc": "解你困惑，知你烦恼。",
+			// 	"img": "/static/index/chat.png",
+			// 	"path": "/pages/chat/index",
+			// 	"type": "URL",
+			// 	"state": true
+			// }, {
+			// 	"_id": "6405386328064aa7a8793a13",
+			// 	"appid": "",
+			// 	"desc": "一句话生成一张图片",
+			// 	"img": "/static/index/picture.png",
+			// 	"path": "/pages/huihua/huihua",
+			// 	"tags": "",
+			// 	"title": "AI绘画",
+			// 	"type": "CLOSE",
+			// 	"state": true
+			// },
+			{
+				"_id": "",
+				"appid": "",
+				"desc": "文本转语音",
+				"img": "/static/index/picture.png",
+				"path": "/pages/tts/index",
+				"tags": "",
+				"title": "文本转语音",
 				"type": "URL",
 				"state": true
-			}, {
-				"_id": "6405386328064aa7a8793a13",
-				"appid": "",
-				"desc": "一句话生成一张图片",
-				"img": "/static/index/picture.png",
-				"path": "/pages/huihua/huihua",
-				"tags": "",
-				"title": "AI绘画",
-				"type": "CLOSE",
-				"state": true
-			}]
+			}
+			
+			]
 		}
 	},
 	methods: {
 		handleJump(item) {
 				switch (item.type) {
 					case 'URL':
+					    console.log(item.path)
 						uni.navigateTo({
 							url: item.path
 						})

@@ -73,7 +73,7 @@
 				</view>
 
 				<!-- 赞赏作者 -->
-				<view class="u-flex u-row-between u-p-30 border-bottom" style="position: relative;"
+			<!-- 	<view class="u-flex u-row-between u-p-30 border-bottom" style="position: relative;"
 					hover-class="hover-class1" hover-stay-time="50" @click="zanshang">
 					<view class="u-flex u-row-left">
 						<image src="/static/zanshang.png"></image>
@@ -82,7 +82,7 @@
 					<view class="u-flex u-row-right">
 						<view class="arror-right"></view>
 					</view>
-				</view>
+				</view> -->
 				
 
 			</view>

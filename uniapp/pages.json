@@ -22,13 +22,33 @@
 		{
 			"path": "pages/chat/index",
 			"style": {
-				"navigationBarTitleText": "GeekChat",
+				"navigationBarTitleText": "PPAI",
 				"enablePullDownRefresh": false,
 				"navigationBarBackgroundColor": "#6c6ceb",
 				"navigationBarTextStyle": "white"
 			}
 		}
-	],
+        ,{
+            "path" : "pages/tts/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "文转音",
+                "enablePullDownRefresh": false,
+				"navigationBarBackgroundColor": "#6c6ceb",
+				"navigationBarTextStyle": "white"
+            }
+            
+        }
+        ,{
+            "path" : "pages/video/index",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
